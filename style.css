@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.modal-bg{
+    display: flex;
+    /* height: 100vh;
+    width: 100%; */
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.6);
+    transition: all 0.2s ease-in;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+.modal{
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    width: 25rem;
+    height: 25rem; 
+    background-color: white;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.active{
+    visibility: visible;
+}
+.modal-heading{
+    text-transform: capitalize;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.closeBtn{
+    font-weight: bold;
+    font-size: 1.25rem;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+
+}
+.rightWrong{
+    visibility: hidden;
+}
+.submitNext{
+    height: 40px;
+    text-align: center;
+    width: 30%;;
+}
+input{
+    width: 83%;
+    font-size: 20px;
+    padding: 5px;
+    text-emphasis: none;
+    outline: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.karnataka-svg{
+    /*background-color: #f00;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px){
+    .modal{
+        width: 20rem;
+    }
+    .karnataka-svg{
+        width: 110mm;
+        height: 170mm;
+    }
+}
